@@ -33,6 +33,6 @@ db.sequelize.authenticate()
   .catch(error=>{
     console.log('el error es' +error)
   })
+  const port = process.env.PORT || 3001;
 
-
-app.listen('3001', () => console.log('Servidor corriendo en el puerto 3001'));
+app.listen(port,()=>console.log(`LISTENING ON PORT ${port}`));
